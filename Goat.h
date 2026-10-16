@@ -1,4 +1,5 @@
 // Goat.h
+//Maxwell koegler | COMSC 210 | lab 23
 
 #ifndef GOAT_H
 #define GOAT_H
@@ -42,7 +43,7 @@ public:
 
     // write overloaded < operator for the std::list
     bool operator<(const Goat& other) {
-        
+        return name < other.name;
     }
 };
 
