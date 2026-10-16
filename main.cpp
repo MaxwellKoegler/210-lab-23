@@ -2,6 +2,9 @@
 #include <fstream>
 #include <iomanip>
 #include <list>
+#include <cstdlib>
+#include <ctime>
+#include <limits>
 #include "Goat.h"
 using namespace std;
 
@@ -33,5 +36,18 @@ int main() {
 
 
     return 0;
+}
+
+int main_menu() {
+    int choice;
+    cout << endl << "Goat manager 3000" << endl;
+    cout << "1) add a goat" << endl;
+    cout << "2) delete a goat" << endl;
+    cout << "3) list goats" << endl;
+    cout << "4) exit" << endl;
+    cout << "choice : " << endl;
+
+    cin >> choice;
+    return choice;
 }
 
